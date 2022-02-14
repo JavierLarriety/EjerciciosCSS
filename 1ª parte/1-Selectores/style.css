@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  border: 2px dashed black;
+  padding: 2rem;
+}
+
+header {
+  background-color: rgb(96, 129, 235);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+section h2 {
+  color: rgb(96, 129, 235);
+}
+
+ul {
+  list-style: circle;
+  margin-left: 1.5rem;
+}
