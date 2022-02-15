@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.contenedor {
+  position: relative;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.contenedor p {
+  font-size: 2rem;
+}
+
+.contenedor div {
+  height: 100px;
+  width: 100px;
+  transition: transform 1s;
+}
+
+.topleft {
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+.topright {
+  position: absolute;
+  background-color: yellow;
+  top: 0;
+  right: 0;
+  transform-origin: right top;
+}
+.bottomleft {
+  position: absolute;
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+}
+.bottomright {
+  position: absolute;
+  background-color: green;
+  bottom: 0;
+  right: 0;
+  transform-origin: right bottom;
+}
+
+.contenedor:hover .topleft,
+.contenedor:hover .bottomright {
+  transform: rotate(90deg);
+}
+
+.contenedor:hover .topright,
+.contenedor:hover .bottomleft {
+  transform: rotate(-90deg);
+}

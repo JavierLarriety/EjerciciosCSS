@@ -23,4 +23,34 @@ svg {
   fill: gray;
 }
 
+.like {
+  animation-name: latido;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
 
+@keyframes latido {
+  0% {
+    fill: gray;
+  }
+
+  25% {
+    fill: red;
+    transform: scale(1.2);
+  }
+
+  50% {
+    fill: red;
+    transform: scale(1);
+  }
+
+  75% {
+    fill: red;
+    transform: scale(1.2);
+  }
+
+  100% {
+    fill: red;
+    transform: scale(1);
+  }
+}
